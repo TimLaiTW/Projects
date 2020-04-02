@@ -1,7 +1,7 @@
 # Projects
 Recording some projects of mine...
 
-#### [Google-liked homepage with React]()
+#### [Google-liked homepage with React](https://github.com/TimLaiTW/Projects/tree/master/G-Project)
 Practicing **React** skills by reproducing a Google's homepage with a combination of serveral components such as **Main**, for main context, **Header** and **Footer**.
 
 #### [Floodlight-based OpenFlow controller development](https://github.com/TimLaiTW/Projects/tree/master/Socket%20Programing/Proxy%20Server%20Programing)
