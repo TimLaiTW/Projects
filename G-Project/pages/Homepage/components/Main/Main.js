@@ -6,11 +6,13 @@ import './Main.css';
 
 function Main() {
   return (
-    <div className="Main"> 
-      <Logo />
-      <SearchBar />
-      <SearchButton />
-    </div>
+  	<div className="MainWrapper">
+	    <div className="MainContentWrapper"> 
+	      <Logo />
+	      <SearchBar />
+	      <SearchButton />
+	    </div>
+	</div>
   );
 }
 

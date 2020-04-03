@@ -7,9 +7,11 @@ import './Homepage.css';
 function Homepage() {
   return (
     <div className="HomepageWrapper"> 
+    	<div className="HomepageContentWrapper">
       	<Header />
 	    <Main />
 	    <Footer />
+	    </div>
     </div>
   );
 }
