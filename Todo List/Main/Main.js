@@ -10,11 +10,12 @@ class App extends Component {
           tasks: []
         };
 
-        this.handleSubmit = this.handleSubmit.bind(this);
+        this.addTask = this.addTask.bind(this);
+        this.deleteTask = this.deleteTask.bind(this);
         this.input = React.createRef();
     }
 
-    handleSubmit(event){
+    addTask(event){
         if (this.input.current.value !== "") {
           var newTask = {
             text: this.input.current.value,
@@ -22,13 +23,10 @@ class App extends Component {
           };
           
           var joined = this.state.tasks.concat(newTask);
-          this.setState({tasks: joined});
+          this.setState({ tasks: joined });
           // Either way to update State.
           // this.setState((prevState) => {
-          //   return {
-          //     tasks: prevState.tasks.concat(newTask)
-          //   };
-          // });
+          //   return  { tasks: prevState.tasks.concat(newTask) }; });
 
           this.input.current.value = "";
         }
@@ -36,14 +34,22 @@ class App extends Component {
         event.preventDefault();
     }
 
+    deleteTask(event){
+      var updatedItems = this.state.tasks.filter(function (task){
+        return (task.key !== event);
+      })
+      this.setState({ tasks: updatedItems });
+    }
     render() {
         return (
           <div className="todoListMain">
             <div className="header">
-              <form onSubmit={this.handleSubmit}>
+              <form onSubmit={this.addTask}>
                 <Increment ref={this.input}/>
               </form>       
-              <Display tasks={this.state.tasks}/>
+              <Display 
+                tasks={this.state.tasks}
+                deleteTask={this.deleteTask}/>
             </div>
           </div>
         );

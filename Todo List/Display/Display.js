@@ -1,12 +1,21 @@
 import React, { Component } from "react";
+import Decrement from "../Decrement/index";
 class Display extends Component{
-    displayTasks(task) {    return <li key={task.key}>{task.text}</li>}
+    constructor(props) {
+        super(props);
+        this.displayTasks = this.displayTasks.bind(this);
+    }
+    displayTasks(task) {    
+        return <li key={ task.key }>{ task.text }
+            <Decrement deleteTask={this.props.deleteTask} taskkey={task.key}/>
+            </li>}
+
     render() {
         var tasks = this.props.tasks;
         var listTasks = tasks.map(this.displayTasks);
         return (
             <ul className="theList">
-                {listTasks}
+                    {listTasks}
             </ul>
         )
     }
