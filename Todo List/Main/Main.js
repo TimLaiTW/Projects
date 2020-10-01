@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Increment from "../Increment/index";
 import Display from "../Display/index";
-
+import "./Main.css";
 class App extends Component {
     constructor(props) {
         super(props);

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Decrement from "../Decrement/index";
+import './Display.css';
 class Display extends Component{
     constructor(props) {
         super(props);
