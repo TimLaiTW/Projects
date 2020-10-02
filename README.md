@@ -9,7 +9,7 @@ Using **React** to build a simple To-do List app with several functions as below
 
 **Decrement**:  Deleting the tasks from the list.
 
-![todolist](https://user-images.githubusercontent.com/28375243/94971487-1dd55f00-04d5-11eb-8b0c-5358f2346240.gif)
+![todolist](https://user-images.githubusercontent.com/28375243/94971714-a8b65980-04d5-11eb-860f-77d8f8c26bd1.gif)
 
 #### [Google-liked homepage with React](https://github.com/TimLaiTW/Projects/tree/master/G-Project)
 Practicing **React** skills by reproducing a Google's homepage with a combination of serveral components such as **Main**, for main context, **Header** and **Footer**.
