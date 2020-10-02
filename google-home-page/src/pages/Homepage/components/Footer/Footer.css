@@ -1,0 +1,31 @@
+.FooterWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 40px;
+	color: grey;
+	background: #f3f3f3;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+.FootLeft {
+	height: 100%;
+	margin-left: 3px
+}
+
+.FootRight {
+	height: 100%;
+	margin-right: 30px
+}
+
+.FooterItem {
+	display: inline-block;
+	line-height: 40px;
+	padding-left: 15px;
+}
+
+.FooterLinks {
+	color: grey;
+	text-decoration: none;
+}

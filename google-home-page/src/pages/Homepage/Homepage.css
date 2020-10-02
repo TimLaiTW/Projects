@@ -1,0 +1,12 @@
+.HomepageWrapper {
+	height: 100%;
+	font-size: 13px;
+}
+
+.HomepageContentWrapper{
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+}
